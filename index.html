@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>My Website</title>
+</head>
+<body>
+  <!-- Header -->
+  <section id="header">
+    <div class="header container">
+      <div class="nav-bar">
+        <div class="brand">
+          <a href="galerija.html"><h1><span>W</span>orld <span>+</span>+</h1></a>
+        </div>
+        <div class="nav-list">
+          <div class="hamburger"><div class="bar"></div></div>
+          <ul>
+            <li><a href="#" data-after="Početna">Početna</a></li>
+            <li><a href="#destinations" data-after="Destinacije">Destinacije</a></li>
+            <li><a href="gallery.html" data-after="Galerija">Galerija</a></li>
+            <li><a href="contact.html" data-after="Kontakt">Kontakt</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section id="hero">
+    <div class="hero container">
+      <div>
+        <h1>Zdravo, <span></span></h1>
+        <h1> Mi smo<span></span></h1>
+        <h1>WORLD ++ <span></span></h1>
+       
+        <a href="#" type="button" class="cta" onclick="toggle();">VIDEO</a>
+      </div>
+    </div>
+  </section>
+  <div class="trailer">
+    <video src="video.mp4" controls="true"></video>
+    
+    <img src="img/close.png" class="close" onclick="toggle();">
+      </div>
+  <section id="destinations">
+    <div class="destinations container">
+      <div class="destinations-header">
+        <h1 class="section-title"> <span>Top Destinacije </span></h1>
+      </div>
+      <div class="all-destinations">
+        <div class="destination-item">
+          <div class="destination-info">
+            <h1>Saturnia Maremma</h1>
+            <h2>Italija</h2>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ad, iusto cupiditate voluptatum impedit unde rem ipsa distinctio illum quae mollitia ut, accusantium eius odio ducimus illo neque atque libero non sunt harum? Ipsum repellat animi, fugit architecto voluptatum odit et!</p>
+
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ad, iusto cupiditate voluptatum impedit unde rem ipsa distinctio illum quae mollitia ut, accusantium eius odio ducimus illo neque atque libero non sunt harum? Ipsum repellat animi, fugit architecto voluptatum odit et!</p>
+          </div>
+          <div class="destination-img">
+            <img src="./img/saturnia2.jpg" alt="img">
+          </div>
+        </div>
+        <div class="destination-item">
+          <div class="destination-info">
+            <h1>Galešnjak</h1>
+            <h2>Hrvatska</h2>
+            <p>Srcoliko ostrvo Galešnjak, nalazi se u Pašmanskom kanalu, nedaleko od Zadra.Ovaj prirodni fenomen opisan je još u 19. veku kada ga je primetio Napoleonov kartograf, ali je svetsku slavu dobilo 2008. godine kada je "otkriveno" na Google Earth-u.</p>
+            <p>Ostrvo je u vlasništvu lokalne porodice Jureško, koja na njemu gaji retke biljke, te je iz tog razloga srce dobilo "ožiljak".Od skoro je otvoreno za turiste koji dolaze iz različitih krajeva sveta kako bi tu proveli Dan zaljubljenih.  </p>
+          </div>
+          <div class="destination-img">
+            <img src="./img/hrvatska.jpg" alt="img">
+          </div>
+        </div>
+        <div class="destination-item">
+          <div class="destination-info">
+            <h1>Kefalonija</h1>
+            <h2>Grčka</h2>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ad, iusto cupiditate voluptatum impedit unde rem ipsa distinctio illum quae mollitia ut, accusantium eius odio ducimus illo neque atque libero non sunt harum? Ipsum repellat animi, fugit architecto voluptatum odit et!</p>
+          </div>
+          <div class="destination-img">
+            <img src="./img/kefalonija.jpg" alt="img">
+          </div>
+        </div>
+        <div class="destination-item">
+          <div class="destination-info">
+            <h1>Senja</h1>
+            <h2>Norveška</h2>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ad, iusto cupiditate voluptatum impedit unde rem ipsa distinctio illum quae mollitia ut, accusantium eius odio ducimus illo neque atque libero non sunt harum? Ipsum repellat animi, fugit architecto voluptatum odit et!</p>
+          </div>
+          <div class="destination-img">
+            <img src="./img/senja.png" alt="img">
+          </div>
+        </div>
+        
+      </div>
+    </div>
+  </section>
+  
+   
+
+
+  <section id="footer">
+    <div class="footer container">
+      <div class="brand"><h1><span>W</span>orld <span>+</span>+</h1></div>
+      <h2></h2>
+      <div class="social-icon">
+        <div class="social-item">
+          <a href="#"><img src="https://img.icons8.com/bubbles/100/000000/facebook-new.png"/></a>
+        </div>
+        <div class="social-item">
+          <a href="#"><img src="https://img.icons8.com/bubbles/100/000000/instagram-new.png"/></a>
+        </div>
+        <div class="social-item">
+          <a href="#"><img src="https://img.icons8.com/bubbles/100/000000/twitter.png"/></a>
+        </div>
+      </div>
+     
+    </div>
+  </section>
+  <!-- End Footer -->
+  <script src="./app.js"></script>
+  <script type="text/javascript">
+  function toggle(){
+    var trailer=document.querySelector(".trailer")
+    trailer.classList.toggle("active")
+  }
+  </script>
+</body>
+</html>
